@@ -4,36 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <style>
     body{
         margin: 0px;
+        background-color: #57CC99;
+        font-family: 'Mulish', sans-serif;
     }
-    header{
+    .header{
         background-color: #57CC99;
         width: 100%;
         height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-    header img{
+    .header__img{
         width: 200px;
-        margin-top: 15px;
-        margin-left: 15px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .header__menu{
+        margin-right: 30px;
+    }
+    .header__menu ul{
+        display: none;
+        list-style: none;
+        padding: 0px;
+        position: absolute;
+        width: 100px;
+        text-align: right;
+        margin: 0px 0px 0px -14px;
+    }
+    .header__menu:hover ul, ul:hover{
+        display: block;
+    }
+    .header__menu li{
+        margin: 10px 0px;
+    }
+    .header__menu li a{
+        color: white;
+        text-decoration: none;
+    }
+    .header__menu li a:hover{
+        text-decoration: underline;
+    }
+    .header__menu--profile{
+        margin-right: 8px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    .header__menu--profile img{
+        margin-right: 8px;
+        width: 30px;
+    }
+    .header__menu--profile p{
+        margin: 0px;
+        color: white;
     }
 </style>
 <body>
-    <header>
-        <img src="Assets/banner.png" alt="Logo Effectio">
-        <h1>Effectio Energy Control Center</h1>
+    <header class="header">
+        <img class="header__img" src="Assets/banner.png" alt="Logo Effectio">
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="Assets/Usuario.png" alt="User">
+                <p>Perfil</p>
+            </div>
+            <ul>
+                <li><a href="/">Cuenta</a></li>
+                <li><a href="/">Cerrar sesión</a></li>
+            </ul>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li>Cuenta</li>
-            <li>Cerrar sesión</li>
-        </ul>
-    </nav>
 
-    <section> 
+    <!--<section> 
         <h2>Sección principal</h2>
     </section>
 
@@ -44,7 +92,7 @@
             <li>Términos y condiciones</li>
         </ul>
         
-    </footer>
+    </footer>-->
 
 
 </body>
