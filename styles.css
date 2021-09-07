@@ -1,0 +1,124 @@
+body{
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+}
+.header{
+    background-color: #A2DBFA;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__img{
+    width: 150px;
+}
+.login{
+    background: linear-gradient(#A2DBFA,#053742);/*degradado de colores*/
+    display: flex;/*para flexbox*/
+    align-items: center;/*Para alinear al centro todos los elementos en vertical*/
+    justify-content: center;/*alinear de manera horizontal*/
+    flex-direction: column;/*que todos los elementos esten en columna*/
+    padding: 0px 30 px;
+    min-height: calc(100vh - 200px);/*un mminimo del altura vh medida relativa % que ve el ususario*/
+}
+.login__container{
+    background-color: rgba(255,255,255,0.1);
+    border: solid 2px white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 700px;/*Medidas que no cambian ddel contenedor*/
+    width: 300px;/*Medidas que no cambian dedl contenedor*/
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.login__container--form{
+    display: flex;
+    flex-direction: column;
+}
+.login__container--form label{
+    font-size: 14px;
+}
+.login__container--remember-me{
+    color: white;
+    display: flex;
+    justify-content: space-between;/*para dejar una espacio en el medio*/
+    margin-top: 10px;
+}
+.login__container--remember-me a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;/*quita el subrayado de la liga*/
+}
+.login__container--remember-me a:hover{ /* Nos dice que cuando se haga hover sobre un elemeto a haga lo siguiente*/
+    text-decoration: underline;/*Agrega el subrayado de la liga*/
+}
+.login__container--social-media > div{ /*que estilice todos los div que estan dentro de esta clase padre*/
+    display: flex;
+    align-items: center;/*alinear verticalmente en el centro*/
+    font-size: 14px;
+    margin-bottom: 10px ;
+}
+.login__container--social-media > div > img{ /*que estilice todos los div que estan dentro de esta clase padre*/
+    width: 25px;
+    margin-right: 10px;
+}
+.login__container--register{
+    font-size: 14px;
+}
+.login__container--register a{
+    font-size: 16px;
+    font-weight: bold;/*para negritas*/
+    color: white;
+    text-decoration: none;/*quita el subrayado*/
+}
+.login__container--register a:hover{
+    text-decoration: underline;/*pone el subrayado cuando se hace hover sobre ele elemento*/
+}
+.input{
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: solid 2px white;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none; /*quita el borde azul que tiene por defecto*/
+    height: 50px;
+}
+::placeholder{/*pseudo elemento*/
+    color: white;
+}
+.button{
+    background-color: rgba(255,255,255,0.2);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;/* al hacer hover se cambia por una manita indicando que tiene una acción*/
+    font-size: 16px;
+    font-weight: bold;/*hace negritas*/
+    height: 50px;
+    letter-spacing: 1px;/*Separa las letras*/
+    margin: 10px 0px;
+}
+.footer{
+    background-color: #053742;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+.footer a{
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
