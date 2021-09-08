@@ -122,3 +122,47 @@ body{
 .footer a:hover{
     text-decoration: underline;
 }
+@media only screen and (max-width: 600px){/*Cambios para móvil o dispositivos más pequeños*/
+    /*Entre () va el valor del que dependen los cambios*/
+    .login__container{
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        width: 100%;
+    }
+    .footer{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+.notFound__container{
+    background: linear-gradient(#A2DBFA,#053742);
+    display: flex;/*para flexbox*/
+    align-items: center;/*Para alinear al centro todos los elementos en vertical*/
+    justify-content: center;/*alinear de manera horizontal*/
+    flex-direction: column;/*que todos los elementos esten en columna*/
+    padding: 0px 30 px;
+    min-height: calc(100vh - 200px);/*un mminimo del altura vh medida relativa % que ve el ususario*/
+}
+.text {
+  text-align: center;
+  margin-top: 56px;
+  color: #fff;
+  font-size: 3.0em;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+.animated {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  }
